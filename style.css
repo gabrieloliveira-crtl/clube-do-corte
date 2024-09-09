@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    list-style: none;
+}
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #626266;
+    align-items: center;
+    text-align: center;
+}
+header img{
+    width: 80px;
+}
+header ul{
+    display: flex;
+    gap: 10px;
+}
+.section1{
+    padding: 120px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #938172;
+}
+.section1 img{
+    width: 190px;
+}
+.section2{
+    padding: 200px;
+    align-items: center;
+    background: linear-gradient(180deg, #00000064 8.33%, rgba(0, 0, 0, 0.745) 100%), url(img/barber-5194406_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pai1{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.pai2{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.pai1 div{
+    justify-content: space-evenly;
+    width: 270px;
+    height: 290px;
+    display: flex;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pai2 div{
+    justify-content: space-evenly;
+    width: 270px;
+    height: 290px;
+    display: flex;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#q{
+    background-image: url(img/corte1.jpg);
+}
+#w{
+    background-image: url(img/corte2.webp);
+}
+#e{
+    background-image: url(img/corte3.jpg);
+}
+#a{
+    background-image: url(img/corte4.jpg);
+}
+#s{
+    background-image: url(img/corte5.jpg);
+}
