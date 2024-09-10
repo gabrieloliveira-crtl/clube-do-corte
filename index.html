@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68a82f1b2c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/barber-shop_7478503.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <title>Clube do Corte</title>
 </head>
 <body>
@@ -14,14 +17,14 @@
         <h1>Clube do Corte</h1>
         <nav>
             <ul>
-                <li><a href="">Sobre nós</a></li>
-                <li><a href="">Cortes</a></li>
-                <li><a href="">Contatos</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#cortes">Cortes</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
     <!-- aqui iremos iniciar a primeira sessao da pagina -->
-    <section class="section1">
+    <section class="section1" id="sobre">
         <div>
             <h2>Sobre nós</h2>
             <p>No Clube do Corte, oferecemos uma experiência única de estilo e sofisticação. Nossos barbeiros experientes estão prontos para proporcionar cortes e cuidados personalizados em um ambiente acolhedor e moderno. Venha e descubra o que significa um corte perfeito!</p>
@@ -31,9 +34,9 @@
         </div>
     </section>
     <!-- abrimos a segunda sessao desta pagina -->
-    <section class="section2">
+    <section class="section2" id="cortes">
 
-        <h3>Aqui esta alguns de nossos cortes</h3>
+        <h3>Aqui esta alguns de nossos cortes:</h3>
         <div class="pai1">
             <div id="q"></div>
             <div id="w"></div>
@@ -46,5 +49,26 @@
             <div id="d"></div>
         </div>
     </section>
+    <!-- aqui começamos a terceira sessao da pagina -->
+    <section class="section3">
+        <div>
+            <h2>História do Barbeiro</h2>
+            <p>Saiba o porque Carlos nosso melhor barbeiro do bairro esta aqui trabalhando conosco</p>
+        </div>
+        <div>
+            <button>Veja Mais</button>
+        </div>
+    </section>
+    <footer id="contatos">
+        <div>
+            <img src="img/barber-shop_7478503.png" alt="" loading="lazy">
+        </div>
+        <div class="foter">
+            <p>CLUBE DO CORTE<br>TODOS OS DIREITOS
+                RESERVADOS 2023 | CLUBEDOCORTE.COM.BR</p>
+                <i class="fa-brands fa-instagram" id="insta"></i>
+                <i class="fa-brands fa-facebook" id="face"></i>
+            </div>
+    </footer>
 </body>
 </html>
