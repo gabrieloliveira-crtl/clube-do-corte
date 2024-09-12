@@ -1,295 +1,504 @@
 *{
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    list-style: none;
-    font-family: sans-serif
+    margin: 0;/* zarando a marigin do site */
+    padding: 0;/* zerando o preenchimento*/
+    list-style: none;/* removendo os estilos de listas */
+    text-decoration: none; /* tirando a decoraçao do texto */
+    font-family: sans-serif /* definindo a fonte geral  */
 }
 html{
+    /* adicionando efeito suave do clique entre uma sessao e outra */
     scroll-behavior: smooth
 }
+/* importando fonte */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+/* chamando o cabeçalho para formatação */
 header{
+    /* preenchimento do cabeçalho */
     padding: 10px;
+    /* tornando os itens flexiveis lado-a-lado */
     display: flex;
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* definindo cor de fundo do cabeçalho */
     background-color: #626266;
+    /* alinhando itens horizontalmente */
     align-items: center;
+    /* alinhando os itens verticalmente */
     text-align: center;
 }
+/* formatando a imagem */
 header img{
+    /* definindo o tamanho da imagem */
     width: 80px;
 }
+/* chamando a lista para formantação */
 header ul{
+    /* tornando os itens da lista lado-a-lado */
     display: flex;
+    /* adicionando espaço nas listas */
     gap: 10px;
-    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    /* colocando sombra nos textos */
+    text-shadow: 10px 10px 10px black;
 }
+/* chamando a ancora para formatação */
 header ul li a{
+    /* definindo a cor da letra da ancora */
     color: white;
     
 }
+/* adicionando efeito ao passar o mouse */
 header ul li:hover{
+    /* efeito de aumentar a escala do iten */
     transform: scale(1.1,1.1);
+    /* transição ao aplicar os efeitos */
     transition: 1s;
+    /* trocando a cor da sombra do texto */
     text-shadow: 6px 8px 15px white;
 }
+/* chamando a primeira sessão para formatação */
 .section1{
+    /* definindo um tamanho da sessão */
     padding: 130px;
+    /* adicionando efeito degrade a imagem de fundo */
     background: linear-gradient(180deg, #00000064 8.33%, rgba(0, 0, 0, 0.745) 100%), url(img3/barbershop-4484297_1280.jpg);
+    /* deixando a imagem de fundo centralizada */
     background-position: center;
+    /* deixando a imagem de fundo nao se repetir idependente do tamanho dela */
     background-repeat: no-repeat;
+    /* deixando a imagem cobri todo o espaço disponivel */
     background-size: cover;
 }
+/* chamando o titulo para formatação */
 .section1 h2{
+    /* distancia entre o titulo e o as divs */
     margin-bottom: 40px;
+    /* definindo a cor da letra do titulo */
     color: white;
 }
+/* chamando a div pai das duas caixas para formatação geral */
 .pai{
+    /* deixando as div lado-a-lado */
     display: flex;
+    /* colocando um respiro entre as caixas */
     gap: 30px;
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* adicionando respiro na divs */
     margin-top: 20px;
 }
+/* chamando as caixas para formatação */
 .pai div{
+    /* definindo uma largura para as caixa */
     width: 190px;
+    /* uma altura */
     height: 270px;
+    /* tornando as caixas lado-a-lado */
     display: flex;
+    /* deixando as imagens centralizadas */
     background-position: center;
+    /* deixano as imagens nao se repetir */
     background-repeat: no-repeat;
+    /* deixando as imagens cobrir todo o espaço */
     background-size: cover;
+    /* adicionado a curvatura da caixa */
     border-radius: 20px;
+    /* adicionado a sembra as caixas */
     box-shadow: 10px 10px 15px black;
+    /* alinhando os itens verticalmente */
     align-items: center;
+    /* adicionando respiro entre as caixar */
     gap: 30px;
 }
+/* chamando a primeira caixa para formatar */
 #filho1{
+    /* definindo a imagem de fundo */
     background-image: url(img3/corte1.jpg);
-    text-align: center;
+    /* adicionando uma sombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mous */
 #filho1:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* efeito de suavizaãp */
     transition: 1s;
 }
+/* chamando o paragrafo da caixa para formatação */
 #filho1 p{
+    /* alinhando o texto na parte inferior da caixa */
     margin-top: 250px;
+    /* definindo um tamanho da fonte */
     font-size: 20px;
+    /* espeçura do fonte */
     font-weight: 30px;
+    /* alinhando ao centro o texto */
     margin-left: 60px;
+    /* definindo a cor da letra */
     color: white;
 }
+/* chamando a segunda caixa para formatação */
 #filho2{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/corte2.webp);
+    /* adicionando sombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mouse */
 #filho2:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
     
 }
+/* chamando o paragrafo para formatação */
 #filho2 p{
+    /* alinhando o paragrafo para a parte inferior da caixa */
     margin-top: 250px;
+    /* definindo a largura da fonte */
     font-size: 20px;
+    /* definindo a espessura da fonte */
     font-weight: 30px;
+    /* alinhando o paragrafo no centro */
     margin-left: 60px;
+    /* definindo a cor da letra */
     color: white;
 }
+/* chamando a terceira div para formatação */
 #filho3{
+    /* definindo a imagem de fundo */
     background-image: url(img3/corte3.jpg);
+    /* adicionando xombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mouse */
 #filho3:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
+/* chamando o paragrafo para formatação */
 #filho3 p{
+    /* alinhando o paragrafo na parte inferior */
     margin-top: 250px;
+    /* definindo um tamanho para as letras */
     font-size: 20px;
+    /* definindo a espessura da letra */
     font-weight: 30px;
+    /* alinhando ao centro o paragrafo */
     margin-left: 40px;
+    /* definindo a cor da letra */
     color: white;
 }
+/* chamando a quarta div para formatação */
 #filho4{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/corte44.jpeg);
+    /* adicionando sombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeitos ao passar o mouse */
 #filho4:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
+/* chamando o paragrafo para formatação */
 #filho4 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 230px;
+    /* definindo um tamanho para as letras */
     font-size: 20px;
+    /* definindo a espessura da letra */
     font-weight: 30px;
+    /* alinhando ao centro o paragrafo */
     margin-left: 40px;
+    /* definindo uma cor a letra */
     color: #ffffff;
 }
+/* chamando a quinta div para formatação */
 #filho5{
+    /* definindo uma imagem de fundo  */
     background-image: url(img3/corte66.jpg);
+    /* adicionando sombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mouse */
 #filho5:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
+/* chamando o paragrafo para formatação */
 #filho5 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 230px;
+    /* definindo um tramanho para as letras */
     font-size: 20px;
+    /* definindo a espessura da letra */
     font-weight: 30px;
+    /* alinhando ao centro o paragrafo */
     margin-left: 30px;
+    /* definindo uma cor a letra */
     color: #ffffff;
 }
+/* chamando a ultima div para formatação */
 #filho6{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/corte6.jpeg);
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mouse */
 #filho6:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
+/* chamando o paragrafo para formatação */
 #filho6 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 230px;
+    /* definindo o tamanho da letra */
     font-size: 20px;
+    /* definindo a espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro da div */
     margin-left: 30px;
+    /* definindo uma cor para a letra */
     color: #ffffff;
 }
+/* chamando a segunda sessao para formatação */
 .section2 {
+    /* dando um tamanho para a sessão */
     padding: 170px;
+    /* adicionando um efeito de degrade a cor de fundo */
     background: linear-gradient(180deg, black 8.55%, #626266 100%);
 }
+/* chamando o titulo para formatação */
 .section2 h2 {
+    /* adicionando espaçamento entre o titulo e as caixas(divs) */
     margin-bottom: 30px;
+    /* definindo cor a letra */
     color: white;
 }
+/* chamando a primeira div da segunda sessão para formatação */
 #filho11{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/waves.jpg);
-    text-align: center;
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mouse */
 #filho11:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
+/* chamando o paragrafo para formatação */
 #filho11 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 250px;
+    /* definindo tamanho das letras */
     font-size: 20px;
+    /* definindo espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro */
     margin-left: 60px;
+    /* definindoa cor da letra */
     color: white;
 }
 #filho22{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/blindado.jpg);
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
 #filho22:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
     
 }
 #filho22 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 250px;
+    /* definindo tamanho das letras */
     font-size: 20px;
+    /* definindo espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro */
     margin-left: 60px;
+    /* definindoa cor da letra */
     color: white;
 }
 #filho33{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/ceasar.jpg);
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
 #filho33:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
 #filho33 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 250px;
+    /* definindo tamanho das letras */
     font-size: 20px;
+    /* definindo espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro */
     margin-left: 40px;
+    /* definindoa cor da letra */
     color: white;
 }
 #filho44{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/desenhos.jpg);
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
 #filho44:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
 #filho44 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 230px;
+    /* definindo tamanho das letras */
     font-size: 20px;
+    /* definindo espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro */
     margin-left: 40px;
+    /* definindoa cor da letra */
     color: #ffffff;
 }
 #filho55{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/faux.jpg);
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
 #filho55:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
 #filho55 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 230px;
+    /* definindo tamanho das letras */
     font-size: 20px;
+    /* definindo espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro */
     margin-left: 50px;
+    /* definindoa cor da letra */
     color: #ffffff;
 }
 #filho66{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/side.jpg);
+    /* adicionando uma sombra a letra */
     text-shadow: 5px -2px 8px black;
 }
 #filho66:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
 }
 #filho66 p{
+    /* alinhando o paragrafo a parte inferior da div */
     margin-top: 230px;
+    /* definindo tamanho das letras */
     font-size: 20px;
+    /* definindo espessura da letra */
     font-weight: 30px;
+    /* alinhando o paragrafo ao centro */
     margin-left: 50px;
+    /* definindoa cor da letra */
     color: #ffffff;
 }
+/* chamando o roda-pé para formatação */
 footer{
+    /* definindo um tamanho do roda-pé */
     padding: 50px;
+    /* alinhando os itens veticalmente */
     align-items: center;
+    /* alinhado horizontalmente */
     text-align: center;
+    /* justificando os conteudos */
     justify-content: space-between;
+    /* definindo uma cor de fundo do botão */
     background-color: #626266;
 }
+/* chamando a imagem para formatação */
 footer img{
+    /* definindo o tamanho da imagem */
     width: 90px;
+    /* adicionando respiro entre a imagem e os texto */
     margin-bottom: 30px;
 }
+/* chamando a segunda div para formatação */
 .foter{
+    /* tornando os itens lado-a-lado */
     display: flex;
+    /* alinhando veticalmente os itens */
     text-align: center;
+    /* justificando os conteudos */
     justify-content: space-around;
 }
+/* chamando os icone para formatação */
 .foter i{
+    /* aumentando os icones */
     font-size: 40px;
+    /* adicionando um respiro entre o icone e a caixa */
     padding: 10px;
+    /* adiconando a curvatura dos icones */
     border-radius: 10px ;
+    /* trocando a cor do icone */
     color: white;
 }
+/* chamando o icone par formatação */
 #insta{
+    /* adiconando efeito degrade para o icone */
     background: linear-gradient(150deg, rgb(255, 0, 230) 1.11%,rgb(38, 1, 38) 100%);
+    /* adicionando sombra ao icone */
     box-shadow: 6px 5px 15px black;
 }
+/* chamando o segundo icone para formatação */
 #face{
+    /* adicionando efeito degrade para o icone */
     background: linear-gradient(150deg, rgb(0, 106, 255) 1.11%, blue 100%);
+    /* adicionando sombra para o icone */
     box-shadow: 6px 5px 15px black;
 }
+/* adiconando efeito ao passar o mouse */
 #insta:hover{
+    /* adiconando efeito de aumento de escala do icone ao passar o mouse */
     transform: scale(1.2,1.2);
+    /* adicionando efeito suavizado da aplicação dos efeitos */
     transition: 1s;
 }
+/* adicionando efeito ao passar o mouse  */
 #face:hover{
+    /* adicionando efeito de aumento de escala ao passar o mouse */
     transform: scale(1.2,1.2);
+    /* adicionando efeito suavizado da aplicação dos efeitos */
     transition: 1s;
 }
