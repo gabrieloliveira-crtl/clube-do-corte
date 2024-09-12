@@ -1,247 +1,430 @@
 *{
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    list-style: none;
-    font-family: sans-serif
+    margin: 0;/* zarando a marigin do site */
+    padding: 0;/* zerando o preenchimento*/
+    list-style: none;/* removendo os estilos de listas */
+    text-decoration: none; /* tirando a decoraçao do texto */
+    font-family: sans-serif /* definindo a fonte geral  */
 }
 html{
+    /* adicionando efeito suave do clique entre uma sessao e outra */
     scroll-behavior: smooth
 }
+/* importando fonte */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+/* chamando o cabeçalho para formatação */
 header{
+    /* preenchimento do cabeçalho */
     padding: 10px;
+    /* tornando os itens flexiveis lado-a-lado */
     display: flex;
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* definindo cor de fundo do cabeçalho */
     background-color: #626266;
+    /* alinhando itens horizontalmente */
     align-items: center;
+    /* alinhando os itens verticalmente */
     text-align: center;
 }
+/* formatando a imagem */
 header img{
+    /* definindo o tamanho da imagem */
     width: 80px;
 }
+/* chamando a lista para formantação */
 header ul{
+    /* tornando os itens da lista lado-a-lado */
     display: flex;
+    /* adicionando espaço nas listas */
     gap: 10px;
+    /* colocando sombra nos textos */
     text-shadow: 10px 10px 10px black;
 }
+/* chamando a ancora para formatação */
 header ul li a{
+    /* definindo a cor da letra da ancora */
     color: white;
     
 }
+/* adicionando efeito ao passar o mouse */
 header ul li:hover{
+    /* efeito de aumentar a escala do iten */
     transform: scale(1.1,1.1);
+    /* transição ao aplicar os efeitos */
     transition: 1s;
+    /* trocando a cor da sombra do texto */
     text-shadow: 6px 8px 15px white;
 }
+/* chamando a primeira sessão para formatação */
 .section1{
+    /* definindo um tamanho da sessão */
     padding: 120px;
+    /* tornando os itens lado-a-lado */
     display: flex;
+    /* alinhando os itens veticalmente */
     text-align: center;
+    /* alinhando os itens hozintalmente */
     align-items: center;
+    /* adicionando respiro entre os itens */
     gap: 30px;
+    /* definindo a cor de fundo do site */
     background-color: #938172;
+    /* aumentando o tamanho da fonte da sessão */
     font-size: 20px;
 }
+/* chamando a imagem da sessão para formatação */
 .section1 img{
+    /* definindo o tamanho imagem */
     width: 190px;
+    /* adicionando curvatura da imagem */
     border-radius: 20px;
+    /* sombra da imagem */
     box-shadow: 10px 13px 15px black;
 }
+/* adicionando efeito ao passar o mouse */
 .section1 img:hover{
+    /* efeito de aumentar a escala da imagem ao passar o mouse */
     transform: scale(1.1,1.1);
+    /* efeito suavizado ao passar o mouse */
     transition: 1s;
 }
+/* chamando o titulo da segunda sessão para formatação */
 .section1 h2{
+    /* adicionando espaçamento entre o titulo e o paragrafo */
     margin-bottom: 20px;
 }
+/* chamando a segunda sessão para formatação */
 .section2{
+    /* definindo tamanho da sessão */
     padding: 200px;
-    align-items: center;
+    /* adicionando efeito de degrade para a imagem de fundo */
     background: linear-gradient(180deg, #00000064 8.33%, rgba(0, 0, 0, 0.745) 100%), url(img/barber-5194406_1280.jpg);
+    /* adicionando efeito para deixar a imagem "estatica" */
     background-attachment: fixed;
+    /* deixando a imagem centralizada */
     background-position: center;
+    /* efeito para não repetir a imagem */
     background-repeat: no-repeat;
+    /* deixando a imagem cobrir toda a tela utilizavel */
     background-size: cover;
-    text-align: center;
 }
+/* chamando o titulo para formatação */
 .section2 h3{
+    /* adicionando respiro para o titulo e o paragrafo */
     margin-bottom: 30px;
+    /* definindo um tamanho da fonte do titulo */
     font-size: 30px;
 }
+/* chamando o botão da sessão para formatação */
 .section2 button{
+    /* definindo um tamanho para o botão */
     width: 170px;
+    /* respiro do botão */
     padding: 15px;
+    /* curvatura do botão */
     border-radius: 20px;
+    /* cor de fundo do botão */
     background-color: black;
+    /* cor da letra do botão */
     color: white;
+    /* cor da borda do botão */
     border-color: gray;
+    /* respiro entre o botão e o paragrafo */
     margin-top: 50px;
+    /* sombra do botão */
     box-shadow: 6px 5px 15px rgb(0, 0, 0); 
 }
+/* chamando a ancora do botão para formatar */
 .section2 button a{
+    /* definindo a cor do texto do botão */
     color: white;
 }
+/* adicionando efeito ao passar o mouse */
 .section2 button:hover{
+    /* efeito de aumento de escala do botão */
     transform: scale(1.1,1.1);
+    /* efeito suavizado de todos os efeitos adicionados */
     transition: 1s;
+    /* trocando a cor de fundo do botão */
     background-color: white;
+    /* trocando a cor da borda do botão */
     border-color: black;
+    /* trocando o cursosr ao passar o mouse */
     cursor: pointer;
+    /* trocando a cor da letra  */
     color: black;
 }
-
+/* chamando a div-pai para formatação */
 .pai1{
+    /* deixando todas as caixas(div) lado-a-lado */
     display: flex;
+    /* colocando respiro ao site */
     gap: 30px;
+    /* justificando o conteudo */
     justify-content: space-evenly;
+    /* adicionando o respiro das caixas(div) entre o texto */
     margin-top: 20px;
 }
+/* chamando a segunda div-pai para formatação */
 .pai2{
+/* adicionando respiro para as caixas(div) acima */
     margin-top: 20px;
+    /* deixando as lado-a-lado */
     display: flex;
+    /* colocando respiro entre as caixas */
     gap: 30px;
+    /* justificando os conteudos */
     justify-content: space-evenly;
 }
+/* chamando as div dentro da div-pai para formatação */
 .pai1 div{
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* definindo lagura das caixas(div) */
     width: 270px;
+    /* definindo altura para as caixas(div) */
     height: 290px;
+    /* tornando as caixas(div) lado-a-lado */
     display: flex;
+    /* adicionando curvatura as caixas(div) */
     border-radius: 20px;
+    /* deixando as imagens de fundo ao centro */
     background-position: center;
-    background-repeat: no-repeat;
+    /* deixando as imagens cobrir todo o fundo da caixa(div) */
     background-size: cover;
+    /* sombra da caixa(div) */
     box-shadow: 15px 26px 15px black;
 }
+/* chamando as div dentro da segunda div-pai para formatação */
 .pai2 div{
+    /* sombra das caixar(div) */
     box-shadow: 15px 26px 15px black;
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* definindo largura da caixa(div) */
     width: 270px;
+    /* definindo altura da caixa(div */
     height: 290px;
+    /* deixando os itens lado-a-lado */
     display: flex;
+    /* adicionando curvatura as caixas(div) */
     border-radius: 20px;
+    /* deixando as imagens de fundo ao centro */
     background-position: center;
-    background-repeat: no-repeat;
+    /* deixando as imagens ao fundo cobrir toda caixa(div) */
     background-size: cover;
 }
+/* chamando a primeira div para formatação */
 #q{
+    /* definindo imagem de fundo para caixa(div) */
     background-image: url(img/corte1.jpg);
 }
+/* adicionando efeito ao passar o mouse na primeira div */
 #q:hover{
+    /* efeito de aumento de escala da div */
     transform: scale(1.2,1.2);
+    /* aumento da largura da div */
     width: 300px;
+    /* aumento da altura da div */
     height: 320px;
+    /* efeito suavizado as efeitos aplicados */
     transition: 1s;
 }
+/* chamando a segunda div para formatação */
 #w{
+    /* definindo a imagem de fundo */
     background-image: url(img/corte2.webp);
 }
+/* adicionando efeito ao passar o mouse na segunda div */
 #w:hover{
+    /* efeito de aumento de escala da div */
     transform: scale(1.2,1.2);
+    /* aumento da largura da div */
     width: 300px;
+    /* aumento da altura da div */
     height: 320px;
+    /* efeito suavizado aos efeitos aplicados */
     transition: 1s;
 }
+/* chamando a terceira div para formatação */
 #e{
+    /* adicionando imagem de fundo */
     background-image: url(img/corte3.jpg);
 }
+/* adicionando efeito ao passar o mouse */
 #e:hover{
+    /* efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* aumento de largura da div */
     width: 300px;
+    /* aumento de altura da div */
     height: 320px;
+    /* efeito de suavização aos efeitos aplicado */
     transition: 1s;
 }
+/* chamando a quarta div para formatação */
 #a{
+    /* definindo imagem de fundo */
     background-image: url(img/corte4.jpg);
 }
+/* adicionando efeito ao passar o mouse */
 #a:hover{
+    /* efeito de aumento de escala  */
     transform: scale(1.2,1.2);
+    /* aumento da largura da div */
     width: 300px;
+    /* aumento da largura da div */
     height: 320px;
+    /* efeito de suavização dos efeitos aplicados */
     transition: 1s;
 }
+/* chamando a quinta div para formatação */
 #s{
+    /* deifinindo imagem de fundo */
     background-image: url(img/mullet.jpg);
 }
+/* adicionando efeito ao passar o mouse */
 #s:hover{
+    /* efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* aumento da largura da div */
     width: 300px;
+    /* aumento da altura da div */
     height: 320px;
+    /* efeito de suavização aos efeitos aplicados */
     transition: 1s;
 }
+/* chamando a sexta div para formatação */
 #d{
+    /* definindo imagem de fundo */
     background-image: url(img/corte6.jpg);
 }
+/* adicionando efeito ao passar o mouse */
 #d:hover{
+    /* efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* aumento da largura da div */
     width: 300px;
+    /* aumento da altura da div */
     height: 320px;
+    /* efeito de suavização aos efeitos */
     transition: 1s;
 }
+/* chamando a terçeira sessão para formatação */
 .section3{
+    /* definindo um tamanho para a sessão */
     padding: 200px;
+    /* definindo um tamanho de fundo da sessão */
     background-color: #541f14;
+    /* alinhando verticalmente */
     text-align: center;
+    /* tamanho da fonte */
     font-size: 25px;
     
 }
+/* chamando o titulo para formatação */
 .section3 h2{
+    /* adicionando respiro entre o titulo e o paragrafo */
     margin-bottom:30px;
 }
+/* chamando o botão para formatação */
 .section3 button{
+    /* definindo a largura do botão */
     width: 170px;
+    /* adicionando respiro ao botão */
     padding: 15px;
+    /* adicionando curvatura a borda do botão */
     border-radius: 20px;
+    /* definindo cor de fundo do botão */
     background-color: black;
+    /* definindo cor da borda do botão */
     border-color: gray;
+    /* definindo cor da letra do botão */
     color: white;
+    /* adicionando respiro entre o botão e o paagrafo */
     margin-top: 50px;
+    /* definindo sombra ao botão */
     box-shadow: 6px 5px 15px rgb(0, 0, 0);
 }
+/* adicionando efeito ao passar o mouse */
 .section3 button:hover{
+    /* trocando a cor da letra do botão */
     color: #b8b8c1;
+    /* trocando a cor de fundo do botão */
     background-color: rgb(34, 9, 9);
+    /* trocando a cor do botão */
     border-color: black;
+    /* efeito de suavização dos efeitos aplicados */
     transition: 1s;
+    /* efeito de aumento de escala */
     transform: scale(1.1,1.1);
 
 }
+/* chamando o roda-pé para formatação */
 footer{
+    /* definindo um tamanho do roda-pé */
     padding: 50px;
+    /* alinhando os itens veticalmente */
     align-items: center;
+    /* alinhado horizontalmente */
     text-align: center;
+    /* justificando os conteudos */
     justify-content: space-between;
+    /* definindo uma cor de fundo do botão */
     background-color: #626266;
 }
+/* chamando a imagem para formatação */
 footer img{
+    /* definindo o tamanho da imagem */
     width: 90px;
+    /* adicionando respiro entre a imagem e os texto */
     margin-bottom: 30px;
 }
+/* chamando a segunda div para formatação */
 .foter{
+    /* tornando os itens lado-a-lado */
     display: flex;
+    /* alinhando veticalmente os itens */
     text-align: center;
+    /* justificando os conteudos */
     justify-content: space-around;
 }
+/* chamando os icone para formatação */
 .foter i{
+    /* aumentando os icones */
     font-size: 40px;
+    /* adicionando um respiro entre o icone e a caixa */
     padding: 10px;
+    /* adiconando a curvatura dos icones */
     border-radius: 10px ;
+    /* trocando a cor do icone */
     color: white;
 }
+/* chamando o icone par formatação */
 #insta{
+    /* adiconando efeito degrade para o icone */
     background: linear-gradient(150deg, rgb(255, 0, 230) 1.11%,rgb(38, 1, 38) 100%);
+    /* adicionando sombra ao icone */
     box-shadow: 6px 5px 15px black;
 }
+/* chamando o segundo icone para formatação */
 #face{
+    /* adicionando efeito degrade para o icone */
     background: linear-gradient(150deg, rgb(0, 106, 255) 1.11%, blue 100%);
+    /* adicionando sombra para o icone */
     box-shadow: 6px 5px 15px black;
 }
+/* adiconando efeito ao passar o mouse */
 #insta:hover{
+    /* adiconando efeito de aumento de escala do icone ao passar o mouse */
     transform: scale(1.2,1.2);
+    /* adicionando efeito suavizado da aplicação dos efeitos */
     transition: 1s;
 }
+/* adicionando efeito ao passar o mouse  */
 #face:hover{
+    /* adicionando efeito de aumento de escala ao passar o mouse */
     transform: scale(1.2,1.2);
+    /* adicionando efeito suavizado da aplicação dos efeitos */
     transition: 1s;
 }

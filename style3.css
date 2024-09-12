@@ -1,94 +1,159 @@
 *{
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    list-style: none;
-    font-family: sans-serif
+    margin: 0;/* zarando a marigin do site */
+    padding: 0;/* zerando o preenchimento*/
+    list-style: none;/* removendo os estilos de listas */
+    text-decoration: none; /* tirando a decoraçao do texto */
+    font-family: sans-serif /* definindo a fonte geral  */
 }
 html{
+    /* adicionando efeito suave do clique entre uma sessao e outra */
     scroll-behavior: smooth
 }
+/* importando fonte */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+/* chamando o cabeçalho para formatação */
 header{
+    /* preenchimento do cabeçalho */
     padding: 10px;
+    /* tornando os itens flexiveis lado-a-lado */
     display: flex;
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* definindo cor de fundo do cabeçalho */
     background-color: #626266;
+    /* alinhando itens horizontalmente */
     align-items: center;
+    /* alinhando os itens verticalmente */
     text-align: center;
 }
+/* formatando a imagem */
 header img{
+    /* definindo o tamanho da imagem */
     width: 80px;
 }
+/* chamando a lista para formantação */
 header ul{
+    /* tornando os itens da lista lado-a-lado */
     display: flex;
+    /* adicionando espaço nas listas */
     gap: 10px;
-    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    /* colocando sombra nos textos */
+    text-shadow: 10px 10px 10px black;
 }
+/* chamando a ancora para formatação */
 header ul li a{
+    /* definindo a cor da letra da ancora */
     color: white;
     
 }
+/* adicionando efeito ao passar o mouse */
 header ul li:hover{
+    /* efeito de aumentar a escala do iten */
     transform: scale(1.1,1.1);
+    /* transição ao aplicar os efeitos */
     transition: 1s;
+    /* trocando a cor da sombra do texto */
     text-shadow: 6px 8px 15px white;
 }
+/* chamando a primeira sessão para formatação */
 .section1{
+    /* definindo um tamanho da sessão */
     padding: 130px;
+    /* adicionando efeito degrade a imagem de fundo */
     background: linear-gradient(180deg, #00000064 8.33%, rgba(0, 0, 0, 0.745) 100%), url(img3/barbershop-4484297_1280.jpg);
+    /* deixando a imagem de fundo centralizada */
     background-position: center;
+    /* deixando a imagem de fundo nao se repetir idependente do tamanho dela */
     background-repeat: no-repeat;
+    /* deixando a imagem cobri todo o espaço disponivel */
     background-size: cover;
 }
+/* chamando o titulo para formatação */
 .section1 h2{
+    /* distancia entre o titulo e o as divs */
     margin-bottom: 40px;
+    /* definindo a cor da letra do titulo */
     color: white;
 }
+/* chamando a div pai das duas caixas para formatação geral */
 .pai{
+    /* deixando as div lado-a-lado */
     display: flex;
+    /* colocando um respiro entre as caixas */
     gap: 30px;
+    /* justificando os conteudos */
     justify-content: space-evenly;
+    /* adicionando respiro na divs */
     margin-top: 20px;
 }
+/* chamando as caixas para formatação */
 .pai div{
+    /* definindo uma largura para as caixa */
     width: 190px;
+    /* uma altura */
     height: 270px;
+    /* tornando as caixas lado-a-lado */
     display: flex;
+    /* deixando as imagens centralizadas */
     background-position: center;
+    /* deixano as imagens nao se repetir */
     background-repeat: no-repeat;
+    /* deixando as imagens cobrir todo o espaço */
     background-size: cover;
+    /* adicionado a curvatura da caixa */
     border-radius: 20px;
+    /* adicionado a sembra as caixas */
     box-shadow: 10px 10px 15px black;
+    /* alinhando os itens verticalmente */
     align-items: center;
+    /* adicionando respiro entre as caixar */
     gap: 30px;
 }
+/* chamando a primeira caixa para formatar */
 #filho1{
+    /* definindo a imagem de fundo */
     background-image: url(img3/corte1.jpg);
-    text-align: center;
+    /* adicionando uma sombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mous */
 #filho1:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* efeito de suavizaãp */
     transition: 1s;
 }
+/* chamando o paragrafo da caixa para formatação */
 #filho1 p{
+    /* alinhando o texto na parte inferior da caixa */
     margin-top: 250px;
+    /* definindo um tamanho da fonte */
     font-size: 20px;
+    /* espeçura do fonte */
     font-weight: 30px;
+    /* alinhando ao centro o texto */
     margin-left: 60px;
+    /* definindo a cor da letra */
     color: white;
 }
+/* chamando a segunda caixa para formatação */
 #filho2{
+    /* definindo uma imagem de fundo */
     background-image: url(img3/corte2.webp);
+    /* adicionando sombra ao texto */
     text-shadow: 5px -2px 8px black;
 }
+/* adicionando efeito ao passar o mouse */
 #filho2:hover{
+    /* adicionando efeito de aumento de escala */
     transform: scale(1.2,1.2);
+    /* adicionando efeito de suavização */
     transition: 1s;
     
 }
+/* chamando o paragrafo para formatação */
 #filho2 p{
+    /* alinhando o paragrafo para a parte inferior da caixa */
     margin-top: 250px;
     font-size: 20px;
     font-weight: 30px;
